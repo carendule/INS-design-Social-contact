@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.hicoach.caren.hicoach.tools.CustomVideoView
+        android:id="@+id/videoview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <ImageButton
+        android:id="@+id/changesound"
+        android:layout_width="30dp"
+        android:layout_height="20dp"
+        android:src="@drawable/sound"
+        android:scaleType="fitCenter"
+        android:background="@drawable/sound_background"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"/>
+    <Button
+        android:id="@+id/imuser"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="我是用户"
+        android:textColor="#FFFFFFFF"
+        android:background="@drawable/bg_background"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="160dp"/>
+    <Button
+        android:id="@+id/imboss"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="我是商家"
+        android:textColor="#FFFFFFFF"
+        android:background="@drawable/bg_background"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="220dp"/>
+    <Button
+        android:id="@+id/imcoach"
+        android:layout_width="200dp"
+        android:layout_height="40dp"
+        android:text="我是教练"
+        android:textColor="#FFFFFFFF"
+        android:background="@drawable/bg_background"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="280dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Hicoach 2018 © copyright Carendule"
+        android:textColor="#FFFFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="17dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="All rights reserved"
+        android:textColor="#FFFFFFFF"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+</RelativeLayout>

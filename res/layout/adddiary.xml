@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="20dp"
+            android:text="内容"
+            android:textColor="@android:color/black"
+            android:textSize="15dp" />
+
+        <io.github.rockerhieu.emojicon.EmojiconEditText
+            android:id="@+id/diaryedit"
+            android:layout_width="match_parent"
+            android:layout_height="256dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/edit_bg"
+            android:gravity="top"
+            android:maxLength="800"
+            android:singleLine="false" />
+
+        <ImageButton
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/addimage" />
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:id="@+id/diaryconfirm"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:text="确认"
+                app:bootstrapBrand="success"
+                app:buttonMode="regular"
+                app:roundedCorners="true" />
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:id="@+id/diarycancel"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="15dp"
+                android:layout_gravity="center"
+                android:text="取消"
+                app:bootstrapBrand="warning"
+                app:buttonMode="regular"
+                app:roundedCorners="true"/>
+
+        </LinearLayout>
+</android.support.constraint.ConstraintLayout>

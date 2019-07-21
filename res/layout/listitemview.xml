@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="300dp"
+    android:paddingLeft="15dp"
+    android:paddingRight="15dp"
+    android:descendantFocusability="beforeDescendants"><!-- 为突出卡片效果，需设置左右padding,上下通过listView的divider设置 -->
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="15dp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:paddingRight="15dp"
+        android:background="@drawable/listitemselector"
+        android:descendantFocusability="afterDescendants"><!-- 给每个item增加background -->
+        <ImageView
+            android:id="@+id/listitemimage"
+            android:layout_height="180dp"
+            android:layout_width="match_parent"
+            />
+        <TextView
+            android:id="@+id/listitemtext"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:singleLine="true"
+            android:maxLength="20"
+            android:layout_marginTop="10dp" />
+    </LinearLayout>
+</FrameLayout>
